@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prism Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="wrap">
+  <section class="calc" aria-label="Calculator">
+    <div class="brand"><span>Prism</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+    <div class="display" aria-live="polite">
+      <div class="expr" id="expr">Ready</div>
+      <div class="value" id="value">0</div>
+    </div>
+    <div class="pad" id="pad" role="group" aria-label="Keypad"></div>
+  </section>
+
+  <section class="history" aria-label="Recent calculations">
+    <header>
+      <h2>Recent</h2>
+      <button class="link" id="clear-history" type="button" hidden>Clear</button>
+    </header>
+    <ul id="history-list"></ul>
+    <p class="empty" id="history-empty">Finished calculations show up here. Type with your keyboard too: digits, + - * /, Enter, Backspace and Esc all work.</p>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
